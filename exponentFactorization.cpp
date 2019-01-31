@@ -8,10 +8,10 @@ unsigned int power(unsigned int x, unsigned int y, unsigned int p) {
     x = x % p;
 
     while (y > 0) {
-        if (y & 1) {
+        if (y % 2 != 0) {
             res = (res * x) % p;
         }
-        x = y>>1;
+        y = y>>1;
         x = (x*x) % p;
     }
     return res;
