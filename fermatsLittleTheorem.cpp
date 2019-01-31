@@ -22,7 +22,7 @@ void modInverse(int a, int m) {
     }
     else {
         // if a and m are relatively prime, then modulo inverse is a^(m-2) 
-        cout << "Modular multiplicative inverse is " << power(a, m - 2, m);
+        cout << "Modular multiplicative inverse is " << power(a, m - 2, m) << endl;
     }
 }
 
