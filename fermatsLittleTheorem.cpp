@@ -1,18 +1,23 @@
 // simple program to use fermats little theorem to find inverse of mod
 //
 
-#include <bits/stdc++.h>
+//#include <bits>
+#include <iostream>
+#include <algorithm>
+#include <numeric> 
 
 using namespace std;
  
 // to compute x raised to power y under modulo m
 int power(int x, unsigned int y, unsigned int m);
 
-// Function to find modular inverse of a under mpdulo m
+// Function to find modular inverse of a under modulo m
 // assumption is that m is prime
 
+int gcd(int a, int m);
+
 void modInverse(int a, int m) {
-    if (__gcd(a, m) != 1) {
+    if (gcd(a, m) != 1) {
         cout << "Inverse doesn't exist";
     }
     else {
@@ -21,7 +26,16 @@ void modInverse(int a, int m) {
     }
 }
 
-int power(int x, unsigned int y, unsigned int m) P{
+int gcd(int a, int b) {
+    if (a % b == 0) {
+        return b;
+    } 
+    else {
+        return gcd(b, a % b);
+    }
+}
+
+int power(int x, unsigned int y, unsigned int m) {
     if (y == 0) {
         return 1;
     }
