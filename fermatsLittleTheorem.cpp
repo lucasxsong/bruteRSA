@@ -46,10 +46,26 @@ int power(int x, unsigned int y, unsigned int m) {
 }
 
 int main() {
-    cout << "enter a and m" << endl;
-    int a, m;
-    cin >> a >> m;
-    modInverse(a, m);
+    int input = 1;
+    while (input != 0) {
+        cout << "enter 1 for fermats, 2 for gcd, 0 to quit" << endl;
+        cin >> input;
+        if (input == 1) {
+            cout << "enter a and m" << endl;
+            int a, m;
+            cin >> a >> m;
+            modInverse(a, m);
+        }
+        if (input == 2) {
+            cout << "enter two numbers to find gcd" << endl;
+            int a, b;
+            cin >> a >> b;
+            cout << gcd(a, b) << endl;
+        }
+        
+    }
+
+    
     return 0;
 }
 
