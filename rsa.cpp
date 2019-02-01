@@ -71,6 +71,25 @@ int power(int x, unsigned int y, unsigned int m) {
     return (y % 2 == 0) ? p : (x * p) % m;
 }
 
+// function to find private key from e and totient
+int findPrivate(int e, int phi) {
+    // e * x = phi * y + 1
+    int eProd = e;
+    int phiProd = phi + 1;
+    int counter = 1;
+
+    while (eProd != phiProd) { // in the case that e is lower than phi and needs to be incremented
+        if (eProd < phiProd) {
+            eProd += e;
+            ++counter;
+        }
+        else {
+            phiProd += phi;
+        }
+    }
+    return counter;
+}
+
 int main() {
     cout << "welcome to RSA encryption services, inc" << endl;
     cout << "enter two distinct primes, p and q" << endl;
@@ -78,9 +97,9 @@ int main() {
     cin >> p >> q;
 
     int n = p * q;
-    int t = (p - 1) * (q - 1); // calculates totient function from p and q
+    int phi = (p - 1) * (q - 1); // calculates totient function from p and q
 
-    cout << "enter an e such that e is relatively prime to " << t << endl;
+    cout << "enter an e such that e is relatively prime to " << phi << endl;
 
     int e;
 
@@ -88,7 +107,7 @@ int main() {
 
     cout << "public key is (" << e << "," << n << ")" << endl;
     
-    int privateKey = modInverse(e, t); 
+    int privateKey = findPrivate(e, phi); 
 
     cout << "private key is (" << privateKey << "," << n << ")" << endl;
 
