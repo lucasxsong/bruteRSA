@@ -1,6 +1,6 @@
 # crypt
 
-A few assorted tools that I'm working on to help understand cryptography better. Disclaimer: works upon secure principles but is not secure at all. 
+A few assorted tools that I'm working on to help understand cryptography better. Disclaimer: based upon secure principles but is not secure at all. 
 
 ## rsaKeygen
 
