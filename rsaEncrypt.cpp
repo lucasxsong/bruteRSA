@@ -123,8 +123,6 @@ int main() {
 
     cout << "decrypted message is " << decrypted << endl;
 
-
-
     return 0;
 
 }
