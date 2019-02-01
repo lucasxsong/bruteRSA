@@ -10,4 +10,13 @@ Need to add some sort of primality test so that auto keygen will work.
 
 ## rsaEncrypt
 
-Encrypts and decrypts a message in the form of an int with the public and private key pair. Simplifies exponents that may result in integer overflow using an implementation of Fermat's Little Theorem.
+Encrypts and decrypts a message in the form of an int with the public and private key pair. Simplifies exponents that may result in integer overflow using an implementation of Fermat's Little Theorem. (FLT)
+
+## exponentFactorization
+
+Helper function that factorizes large exponents to be used in encrypt and decrypt functions.
+
+## fermatsLittleTheorem
+
+Uses FLT to find the inverse mod.
+
