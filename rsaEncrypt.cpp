@@ -119,7 +119,7 @@ int main() {
 
     cout << "encrypted message is " << encrypted << endl;
 
-    int decrypted = Calculate(encrypted, e, 1, n);
+    int decrypted = Calculate(encrypted, privateKey, 1, n);
 
     cout << "decrypted message is " << decrypted << endl;
 
