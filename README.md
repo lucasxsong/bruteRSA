@@ -16,15 +16,21 @@ Encrypts and decrypts a message in the form of an int with the public and privat
 
 Decrypts a message in the form of an int based upon the public and private key pair.
 
-## decryptToFile.cpp
+### decryptToFile.cpp
 
-Allows user to enter a series of integers to be
+Allows user to enter a series of integers to be decrypted and writes the decrypted messages to a file that user specifies.
 
-## exponentFactorization
+### intToChar
+
+Uses a int to char map to translate a file full of integers to their char equivalents. 
+
+## helper functions
+
+#### exponentFactorization
 
 Helper function that factorizes large exponents to be used in encrypt and decrypt functions.
 
-## fermatsLittleTheorem
+#### fermatsLittleTheorem
 
 Uses FLT to find the inverse mod.
 
