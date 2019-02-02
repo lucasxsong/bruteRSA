@@ -1,6 +1,6 @@
 # crypt
 
-A few assorted tools that I'm working on to help understand cryptography better. Disclaimer: based upon secure principles but is not secure at all. 
+A few assorted tools that I'm working on to help understand cryptography better. As of current, most of this code is in regards to RSA encryption. Disclaimer: based upon secure principles but is not secure at all. 
 
 ## keygen.cpp
 
