@@ -27,11 +27,11 @@ Uses a int to char map to translate a file full of integers to their char equiva
 
 ## helper functions
 
-#### exponentFactorization
+### exponentFactorization
 
 Helper function that factorizes large exponents to be used in encrypt and decrypt functions.
 
-#### fermatsLittleTheorem
+### fermatsLittleTheorem
 
 Uses FLT to find the inverse mod.
 
