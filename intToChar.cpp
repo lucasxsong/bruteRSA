@@ -5,6 +5,18 @@
 using namespace std;
 
 int main() {
+    // initializing int, char map for decoding
+    map<int, char> intToChar;
+
+    intToChar['2'] = 'a';
+    char a[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+    
+    for(int i = 2; i != 28; ++i) {
+        intToChar[i] = a[i - 2];
+    }
+
+    cout << intToChar[3];
+
     string f;
     string o;
     cout << "enter file to translate" << endl;
@@ -16,17 +28,6 @@ int main() {
     ofstream outputFile(o);
 
     inputFile.open(f);
-
-    // initializing int, char map for decoding
-    map<int, char> intToChar;
-
-    intToChar['2'] = 'a';
-    
-    for (int i = 2; i != 28; ++i) {
-        char a = 'a';
-        intToChar[i] = a;
-        ++a;
-    }
 
     // take in int and return a file of strings
     while(!inputFile.eof()) {
