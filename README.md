@@ -11,11 +11,11 @@ Need to add some sort of primality test so that auto keygen will work.
 
 ## encrypt.cpp
 
-Encrypts and decrypts a message in the form of an int with the public and private key pair. Simplifies exponents that may result in integer overflow using an implementation of Fermat's Little Theorem. (FLT)
+Encrypts and decrypts a message in the form of an integer with the public and private key pair. Simplifies exponents that may result in integer overflow using an implementation of Fermat's Little Theorem. (FLT)
 
 ## decrypt.cpp
 
-Decrypts a message in the form of an int based upon the public and private key pair.
+Decrypts a message in the form of an integer based upon the public and private key pair.
 
 ### decryptToFile.cpp
 
