@@ -32,17 +32,17 @@ int main() {
     int n;
     int c;
 
-    cout << "enter public key" << endl;
+    cout << "enter public key (e, n)" << endl;
     cin >> e >> n;
 
-    cout << "enter private key" << endl;
+    cout << "enter private key (d)" << endl;
     cin >> d;
 
     cout << "enter encrypted message" << endl;
     cin >> c;
     int decrypted = Calculate(c, d, 1, n);
 
-    cout << "decrypted message is" << decryped << endl;
+    cout << "decrypted message is " << decrypted << endl;
 
-
+    return 0;
 }
