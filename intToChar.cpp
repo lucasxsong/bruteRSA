@@ -15,8 +15,6 @@ int main() {
         intToChar[i] = a[i - 2];
     }
 
-    cout << intToChar[3];
-
     string f;
     string o;
     cout << "enter file to translate" << endl;
@@ -35,7 +33,6 @@ int main() {
         inputFile >> j;
 
         outputFile << intToChar[j];
-
     }
     inputFile.close();
     outputFile.close();
